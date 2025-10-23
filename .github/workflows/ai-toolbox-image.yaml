@@ -1,4 +1,4 @@
-name: Build custom toolbox image
+name: Build AI Toolbox image for benchmarking and debugging
 on:
   push:
     branches:
@@ -14,7 +14,7 @@ env:
   REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
 
 jobs:
-  build-toolbox-image:
+  build-ai-toolbox-image:
     runs-on: ubuntu-latest
     name: Build and Push AI toolbox image
     steps:
